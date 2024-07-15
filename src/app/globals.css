@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #7CA470;
+  --main-bg: #eee;
+}
 
-*, body {
+* {
   margin: 0;
   padding: 0;
 }
 
-:root {
-  --primary: #7CA470;
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg);
 }
 
+.main-container {
+  height: calc(100vh - 80px);
+}

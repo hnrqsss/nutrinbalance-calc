@@ -6,6 +6,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
+import Header from "@/components/Header";
 import GlobalProvider from "@/providers/GlobalProvider";
 import "./globals.css";
 
@@ -25,7 +26,10 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={inter.className}>
         <GlobalProvider>
-          {children}
+          <Header />
+          <main className="main-container mt-[20px]">
+            {children}
+          </main>
         </GlobalProvider>
       </body>
     </html>
